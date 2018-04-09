@@ -1,0 +1,21 @@
+{
+    "name": "gevman/yii2-owl-carousel",
+    "description": "Owl Carousel 2 for Widget Yii2",
+    "type": "package",
+    "license": "MIT",
+    "require": {
+        "yiisoft/yii2": "~2.0.14",
+        "bower-asset/owl.carousel": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "Gevorg Mansuryan",
+            "email": "gevorgmansuryan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gevman\\OwlCarousel\\": "src/"
+        }
+    }
+}
