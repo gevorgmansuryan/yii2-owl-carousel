@@ -17,7 +17,7 @@ class OwlCarousel extends Widget
     public function init()
     {
         parent::init();
-        $this->view->registerAssetBundle(Asset::class);
+        $this->view->registerAssetBundle(OwlMainAsset::class);
         $this->view->registerJs(sprintf("$('#%s').owlCarousel(%s);", $this->id, Json::encode($this->config)));
     }
 
