@@ -12,9 +12,9 @@ gevman/yii2-owl-carousel
 ```php
 echo \Gevman\OwlCarousel\OwlCarousel::widget([
     'elements' => [
-        '@web/images/image-1.jpg',
-        '@web/images/image-2.jpg',
-        '@web/images/image-3.jpg',
+        Html::img(null, ['class' => 'owl-lazy', 'data' => ['src' => Yii::getAlias('@web/images/image-1.jpg')]]),
+        Html::img(null, ['class' => 'owl-lazy', 'data' => ['src' => Yii::getAlias('@web/images/image-2.jpg')]]),
+        Html::img(null, ['class' => 'owl-lazy', 'data' => ['src' => Yii::getAlias('@web/images/image-3.jpg')]]),
     ],
     'config' => [
         'items' => 1,
